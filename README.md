@@ -1,54 +1,54 @@
-﻿# AI 测试用例生成器 (AI Test Case Generator)
+﻿# AI 测试用例生成器
 
-An intelligent test case generation tool that leverages **Prompt Engineering + AI** to automatically produce comprehensive test cases from feature descriptions.
+利用 **Prompt Engineering + AI** 智能生成结构化测试用例的工具。
 
-## Features
+## 功能特性
 
-- **AI-powered generation** — Describe a feature, get structured test cases covering normal flow, boundaries, equivalence classes, errors, and security
-- **Pre-built templates** — Login, search, forms, file upload, payment scenarios
-- **Multiple export formats** — CSV, JSON
-- **Offline mode** — Works without API keys using built-in templates
-- **中文界面** — Full Chinese UI for local teams
+- **AI 驱动生成** — 描述功能特征，自动生成涵盖正常流程、边界值、等价类、异常场景和安全测试的结构化用例
+- **预置模板** — 登录、搜索、表单、文件上传、支付等常见场景
+- **多种导出格式** — 支持 CSV、JSON
+- **离线模式** — 无需 API Key，内置模板可直接使用
+- **中文界面** — 全中文交互
 
-## Tech Stack
+## 技术栈
 
-| Component | Technology |
-|-----------|-----------|
-| Frontend | Streamlit |
-| Core Logic | Python |
-| LLM Integration | OpenAI / Claude API (optional) |
-| Export | CSV, JSON (via pandas) |
+| 组件 | 技术 |
+|------|------|
+| 前端 | Streamlit |
+| 核心逻辑 | Python |
+| LLM 集成 | OpenAI / Claude API（可选） |
+| 数据导出 | CSV、JSON（基于 pandas） |
 
-## Quick Start
+## 快速开始
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Usage
+## 使用方法
 
-1. **Select a scenario template** from the sidebar (Login, Search, Forms, etc.)
-2. **Review/edit the feature description** in the text area
-3. **Click "生成测试用例"** to generate
-4. **Browse the results** — categorized by type with priority levels
-5. **Export** to CSV or JSON for test management tools
+1. 在左侧边栏**选择场景模板**（登录、搜索、表单等）
+2. **编辑功能描述**（越详细生成越精准）
+3. 点击 **"生成测试用例"**
+4. **浏览结果** — 按类别和优先级分类展示
+5. **导出**为 CSV 或 JSON，用于测试管理工具
 
-## LLM Integration (Optional)
+## LLM 集成（可选）
 
-To use real AI generation instead of built-in templates, set your API key:
+如需使用真实的 AI 生成（而非内置模板），配置 API Key：
 
 ```python
-# In test_generator.py, uncomment the real LLM call:
+# 在 test_generator.py 中取消 LLM 调用的注释
 import openai
 openai.api_key = "your-api-key"
 ```
 
-## Resume Highlight
+## 项目亮点
 
-This project demonstrates:
-- ✅ Test case design methodology (equivalence partitioning, boundary value analysis)
-- ✅ AI/LLM integration skills (Prompt Engineering)
-- ✅ Full-stack development (Python + Streamlit)
-- ✅ Software testing fundamentals
-- ✅ Vibe Coding / AI-assisted development
+本项目展示了：
+- ✅ 测试用例设计方法论（等价类划分、边界值分析）
+- ✅ AI/LLM 集成能力（Prompt Engineering）
+- ✅ 全栈开发（Python + Streamlit）
+- ✅ 软件测试基础知识
+- ✅ Vibe Coding / AI 辅助开发
